@@ -1,0 +1,11 @@
+<h1>Congrats! You completed the Application!</h1>
+<h2>Here are your answers:</h2> 
+<ul>
+{% for form in form_data %}
+  {% for question, answer in form.items %}
+    <li>
+      {{ question }}: {{ answer }}
+    </li>
+  {% endfor %}
+{% endfor %}
+</ul>
